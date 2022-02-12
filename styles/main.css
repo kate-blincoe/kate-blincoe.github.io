@@ -43,11 +43,11 @@ header {
   /* height: 60px; */
   /* vertical-align: middle; */
   height: 80px; /* note height should match body */
-
 }
 
 
 nav {
+  display: inline-block;
   /* padding: 10px 0; */
     /* vertical-align: middle; */
     /* margin: 0; */
@@ -58,11 +58,11 @@ nav {
 nav li {
   /* color: navy; */
   /* font-size: 28px; */
-  display: inline-block;
   /* height: 100px; */
   /* width: 200px; */
   /* vertical-align: middle; */
   /* text-align: center; */
+  display: inline-block;
   margin: auto 60px;
   padding-top: 25px;
   top: 0
@@ -77,6 +77,7 @@ nav a {
 
 .icon {
   /* padding-left: 20px; */
+  display: inline-block;
   font-size: 50px;
   padding-top: 0;
   margin: 0 0 0 20px;
@@ -84,7 +85,7 @@ nav a {
 }
 
 body {
-  height: auto;
+  height: 100%;
 }
 
 main {
@@ -92,16 +93,22 @@ main {
   top: 80px; /* note offset should match header */
   /* bottom: 100px; note offset should match footer */
   bottom: 0;
+  padding-bottom: 40px;
+
 }
 
-.footer {
+footer {
   background-color: aquamarine;
   color: navy;
+  font-style: italic;
   height: 30px; /* note height should match main */
   padding-top: 5px; 
-  /* position: relative; */
+  position: fixed;
   width: 100%;
-  bottom: 50px;
+  bottom: 0px; /* needs to match top offset of main */
   text-align: center;
   /* vertical-align: middle; */
+  display: block;
+
+  
 }
