@@ -1,0 +1,107 @@
+* {
+  font-family: 'Trebuchet MS';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.sub-title {
+  text-align: center;
+  font-style: italic;
+}
+
+header {
+  background-color: aquamarine;
+  /* color: navy; */
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  /* height: 60px; */
+  /* vertical-align: middle; */
+  height: 80px; /* note height should match body */
+
+}
+
+
+nav {
+  /* padding: 10px 0; */
+    /* vertical-align: middle; */
+    /* margin: 0; */
+    /* height: 100px; note height should match body */
+
+}
+
+nav li {
+  /* color: navy; */
+  /* font-size: 28px; */
+  display: inline-block;
+  /* height: 100px; */
+  /* width: 200px; */
+  /* vertical-align: middle; */
+  /* text-align: center; */
+  margin: auto 60px;
+  padding-top: 25px;
+  top: 0
+
+}
+
+nav a {
+  color: navy;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.icon {
+  /* padding-left: 20px; */
+  font-size: 50px;
+  padding-top: 0;
+  margin: 0 0 0 20px;
+  /* vertical-align: middle; */
+}
+
+body {
+  height: auto;
+}
+
+main {
+  position: relative;
+  top: 80px; /* note offset should match header */
+  /* bottom: 100px; note offset should match footer */
+  bottom: 0;
+}
+
+.footer {
+  background-color: aquamarine;
+  color: navy;
+  height: 30px; /* note height should match main */
+  padding-top: 5px; 
+  /* position: relative; */
+  width: 100%;
+  bottom: 50px;
+  text-align: center;
+  /* vertical-align: middle; */
+}
