@@ -6,23 +6,63 @@
 }
 
 body {
-  height: auto;
+  min-height: 100vh;
 }
+
 
 h1 {
   font-size: 50px;
+  padding: 10px 0;
+
 }
 
 h2 {
   font-size: 36px;
+  padding: 8px 0;
 }
 
 h3 {
   font-size: 28px;
+  padding: 5px 0;
 }
 
-a{
+
+nav {
+  background-color: aquamarine;
+  position: fixed;
+  width: 100%;
+  display: inline-block;
+  z-index: 5;
+  height: 80px; /* note height should match main */
+}
+
+nav ul {
+  height: 100%;
+}
+
+nav li {
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 5px;
+  top: 0
+}
+
+nav a {
+  color: navy;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 40px;
   text-decoration: none;
+}
+
+.icon {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+header {
+  position: relative;
+  top: 80px; /* note offset should match nav */
 }
 
 .main-title {
@@ -34,65 +74,10 @@ a{
   font-style: italic;
 }
 
-header {
-  background-color: aquamarine;
-  /* color: navy; */
-  position: fixed;
-  width: 100%;
-  z-index: 5;
-  /* height: 60px; */
-  /* vertical-align: middle; */
-  height: 80px; /* note height should match body */
-}
-
-
-nav {
-  display: inline-block;
-  /* padding: 10px 0; */
-    /* vertical-align: middle; */
-    /* margin: 0; */
-    /* height: 100px; note height should match body */
-
-}
-
-nav li {
-  /* color: navy; */
-  /* font-size: 28px; */
-  /* height: 100px; */
-  /* width: 200px; */
-  /* vertical-align: middle; */
-  /* text-align: center; */
-  display: inline-block;
-  margin: auto 60px;
-  padding-top: 25px;
-  top: 0
-
-}
-
-nav a {
-  color: navy;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.icon {
-  /* padding-left: 20px; */
-  display: inline-block;
-  font-size: 50px;
-  padding-top: 0;
-  margin: 0 0 0 20px;
-  /* vertical-align: middle; */
-}
-
-body {
-  height: 100%;
-}
 
 main {
   position: relative;
-  top: 80px; /* note offset should match header */
-  /* bottom: 100px; note offset should match footer */
-  bottom: 0;
+  top: 80px; /* note offset should match nav */
   padding-bottom: 40px;
 
 }
@@ -103,12 +88,54 @@ footer {
   font-style: italic;
   height: 30px; /* note height should match main */
   padding-top: 5px; 
-  position: fixed;
+  position: relative;
   width: 100%;
-  bottom: 0px; /* needs to match top offset of main */
+  margin-top: 30px;
+  /* bottom: 0px; needs to match top offset of main */
   text-align: center;
   /* vertical-align: middle; */
   display: block;
+}
 
+/* .blog-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+} */
+
+/* flexbox container */
+.blog-links {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  border: 2px solid red;
+  margin: 100px;
+  text-align: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* flexbox items */
+.blog-tile {
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin: 10px;
+  min-width: 250px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+
+}
+
+.blog-tile a {
+  text-decoration: none;
+}
+
+
+
+.blog-img {
+  font-size: 120px;
+  margin: 20px 0 10px 0;
 }
