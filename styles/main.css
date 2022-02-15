@@ -1,25 +1,21 @@
 * {
-  font-family: 'Trebuchet MS';
+  font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* html,
-body {
-  height: 100%;
-} */
-
 
 h1 {
   font-size: 50px;
   padding: 10px 0;
-
+  font-family: 'Permanent Marker', 'Trebuchet MS', sans-serif;
 }
 
 h2 {
   font-size: 36px;
   padding: 10px 0;
+  font-family: 'Permanent Marker', 'Trebuchet MS', sans-serif;
 }
 
 h3 {
@@ -44,9 +40,9 @@ p {
 }
 
 
-
 figcaption {
   font-style: italic;
+  padding-bottom:10px
 }
 
 nav {
@@ -85,10 +81,7 @@ nav a {
 
 .content-container {
   display: flex;
-  /* width: 100%;
-  height: 100%; */
   flex-direction: column;
-  /* justify-content: center; */
 }
 
 header {
@@ -106,12 +99,9 @@ header {
 }
 
 main {
-  /* height: 100%; */
-  background-color: paleturquoise;
-  /* padding: 0 200px; */
+  /* background-color: paleturquoise; */
+  background-color: rgb(195, 180, 238);
   display: flex;
-  /* width: 1000px; */
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
@@ -133,30 +123,32 @@ footer {
   bottom: 0;
 }
 
-main.blog-homepage {
+/* Styles specific to blog homepage */
+
+#blog-homepage {
   background-color: azure;
 }
 
 /* flexbox container */
-.blog-container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+#blog-container {
   display: flex;
   justify-content: center;
   text-align: center;
-  max-width: 1000px;
   flex-wrap: wrap;
+  max-width: 1000px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   /* border: 2px solid red; */
 }
 
 /* flexbox items */
 .blog-tile {
-  border: 4px solid lightseagreen;
+  /* border: 4px solid lightseagreen; */
+  border: 4px solid slateblue;
   border-radius: 16px;
-  background-color: paleturquoise;
+  /* background-color: paleturquoise; */
+  background-color:  rgb(195, 180, 238);
   margin: 10px;
-  /* min-width: 150px;
-  max-width: 300px; */
   min-height: 350px;
   display: flex;
   align-items: center;
@@ -180,11 +172,11 @@ main.blog-homepage {
   margin: 20px 0 10px 0;
 }
 
+/* Styles specific to About page */
+
 .about-fig {
   display: flex;
-  justify-content: center;
-  /* border: 2px red; */
-  
+  justify-content: center;  
 }
 
 .about-fig img {

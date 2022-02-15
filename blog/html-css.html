@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <title>Classes vs IDs</title>
+  </head>
+  
+  <body>
+     
+    <nav>
+      <ul>
+        <li ><a class="icon" href="../index.html">&#129335;</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <!-- <li><a href=#>Contact</a></li> -->
+      </ul>  
+    </nav>
+  
+    <div class="content-container">   
+      <header>
+        <h1 class="main-title">Sprint 2</h1>
+        <h2 class="sub-title">Best Practices for using Classes and IDs</h2>
+
+      </header>
+
+
+      <main>
+        <div class="text-page">
+          <h4 class="date" id="start">Posted 15 February 2022</h4>
+          <br>  
+          <h3>If, like me, you're new to HTML and CSS, you may be wondering what the heck is the difference between an ID and a class...?</h3>
+          <p>Let's start at the very beginning. Most websites use two different types of code: HTML and CSS. The HTML code contains the content of the website (such as text, images and videos), and the CSS code controls the appearance. While it is technically possible to include the styling in the HTML code, this is not considered good practice for various reasons which I'm not going to get into here!</p>
+          <p>HTML code is made from a series of features called "elements". Each heading, paragraph or image is a separate element. When you are designing a website, you need to get your HTML code and your CSS code to talk to each other. One way to do this is to assign elements in your HTML code a class or an ID, and then reference that class or ID in your CSS code to specify the format you would like.</p>
+          <h3>Difference #1 - Uniqueness</h3>
+          <p>Here's an example of some classes and IDs that I used when creating this website:</p>
+          <figure>
+            <img src="classes-ids-html.PNG">
+            <figcaption>Example HTML code</figcaption>
+          </figure>
+          <p>Notice how the IDs (id="blog-homepage" and id="blog-container") are only used once. However, the classes (class="blog-tile", class="blog-title" and class="blog-img" are used multiple times. This is a key difference between IDs and classes.</p>
+          <p>IDs are unique and can only be used once. Also, each element can only have one ID. Therefore, IDs should be used for single elements that have a unique style. If you go to my <a href="blog.html" target="_blank">Blog homepage</a>, you will notice that it has different styling to the rest of the website, so it was appropriate for me to use IDs here.</p>
+          <p>Classes on the other hand can be used on as many elements as you like, and each element can have multiple classes.The classes in the screenshot above are used to set the style for each tile on the blog homepage. Each tile refers to the same classes, so that when the style of those classes is changed in the CSS code it will change the appearance of each tile.</p>
+          <h3>Difference #2 - Syntax</h3>
+          <p>The image above shows the HTML syntax for IDs and classes. IDs are defined using <em>id="[id-name]"</em> and classes are defined using <em>class="[class-name]"</em>. The CSS syntax is a bit different:</p>  
+          <figure>
+            <img src="ids-css.PNG">
+            <figcaption>Example of referencing an ID in CSS</figcaption>
+          </figure>
+          <figure>
+            <img src="class-css.PNG">
+            <figcaption>Example of referencing a class in CSS</figcaption>
+          </figure>
+          <h3>Difference #3 - Specificity</h3>
+          <p>What is specificity, you ask? Basically it's a fancy word for priority. One of the key features of CSS is that it allows you to set multiple conflicting styles for a given element, and it applies a series of rules to determine which style takes priority. Specificity is a key factor in determining which style will be used. The other factors won't be discussed here, but you can read more about them <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank">here</a>.</p> 
+          <p>IDs have higher specificity than classes. Therefore, if an element has both a class and an ID, any conflicts will be resolved by applying the style specified for the ID.</p>
+          <p>Both IDs and classes also have higher specificity than a type selector (such as &lt;h1&gt; [heading 1] or &lt;p&gt; [paragraph]). In the example CSS code shown above, the style settings for the blog-homepage ID override the background colour, and the style settings for the blog-title class override the text colour.</p>
+          <h3>Difference #4 - IDs can be used to create links</h3>
+          <p>Have you ever noticed that when you click a link that scrolls to a particular heading on a webpage, a # appears in the URL? Does that seem familiar? (Hint: check out the images under Difference #2.)</p>
+          <figure>
+            <img src="hash-wikipedia.PNG">
+            <figcaption>Here's an example from Wikipedia</figcaption>
+          </figure>
+          <p>These links within a webpage are created using IDs! Using the code <em>&lt;a href="#id-name"&gt;...&lt;a&gt;</em> in your HTML will create a hyperlink. When you click the hyperlink, the page will scroll to the element with the ID you specified. You can click <a href="#start">here</a> to see this in action!</p>
+          <h3>In conclusion...</h3>
+          <p>I hope you've learnt something from this blog post! For further information, check out the links below.</p>
+          <aside>
+            <h4>References</h4>
+            <ul>
+              <li><a href="https://css-tricks.com/the-difference-between-id-and-class/" target="_blank">The Difference Between ID and Class</a></li>
+              <li><a href="https://stackoverflow.com/questions/12889362/what-is-the-difference-between-id-and-class-in-css-and-when-should-i-use-them" target="_blank">What is the difference between id and class in CSS, and when should I use them?</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank">Cascade and inheritance - MDN Web Docs</a></li>
+            </ul>
+          </aside>
+          <br>
+        </div>
+      </main>
+    
+      <footer class="footer">
+        <p>&copy Kate Blincoe 2022</p>
+      </footer>
+    </div>
+  </body>
+</html>
