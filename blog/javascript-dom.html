@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Javascript 101</title>
+  </head>
+    
+  <body>
+     
+    <nav>
+      <ul>
+        <li ><a class="icon" href="../index.html">&#129335;</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <!-- <li><a href=#>Contact</a></li> -->
+      </ul>  
+    </nav>
+  
+    <div class="content-container">   
+      <header>
+        <h1 class="main-title">Sprint 3</h1>
+        <h2 class="sub-title">Javascript 101</h2>
+
+      </header>
+
+
+      <main>
+        <div class="text-page">
+          <h4 class="date">Posted 20 February 2022</h4>
+          <br>  
+          <h3>So what exactly is Javascript...?</h3>
+          <p>I talked a bit about HTML and CSS last week, but two languages are not enough for the internet! This week we've been learning all about Javascript.</p>
+          <p>Imagine your dream car. It probably comes in lots of different colours, and you can probably pay extra for leather seats. But the underlying mechanics are the same no matter whether you go for <span class="firebrick">Firebrick Red</span> or <span class="midnight">Midnight Blue</span>. That's basically what HTML is - the underlying structure of a website. It doesn't look pretty, but without it the website would just be a blank page. CSS is like the shiny paint job and those heated leather seats you always wanted. It sits on top of HTML and turns your website from boring to brilliant.</p>          
+          <p>Now we know that HTML and CSS give us the tools to build a website that's full of content and looks pretty, you may be wondering what the point of Javascript is.</p>
+          <p>Let's go back to our car analogy. What modern car isn't full of electronics that control pretty much everything? That's what Javascript is. It's the website equivalent of the behind the scenes systems that let you change the temperature of those heated seats. Or maybe stop your car from skidding if you brake too hard. Depending on your priorities.</p>
+        <div class="emoji-container">
+            <p class="emoji-large">&#128663;</p>
+          </div>  
+          <h3>OK, you've convinced me that Javascript might be useful, but what can it do that those other languages can't?</h3>
+          <p>What sets Javascript apart from HTML and CSS is that it lets you add dynamic content to your website. By that I mean things that change. Like forms and buttons, or content that updates automatically based on something external.</p>
+          <p>One of the tools that lets us do this is called 'control flow'. Which is a fancy way of saying, if this statement is true, do this thing. Otherwise do this other thing. A real word example would be figuring out what to do for dinner. My thought process would go something like this:</p>
+          <p class ="bold">Can I be bothered cooking?</p>
+          <ul>
+            <li>If the answer is no, order pizza.</li>
+            <li>Otherwise, decide on a recipe.</li>
+          </ul>
+          <p class="bold">Do I have all the ingredients?</p>
+          <ul>
+            <li>If not, go to the supermarket.</li>
+            <li>If yes, start cooking.</li>
+          </ul>
+          <p class="bold">Does the recipe work?</p>
+          <ul>
+            <li>If yes, enjoy a delicious home-cooked meal.</li>
+            <li>Otherwise, order pizza.</li>
+          </ul>
+          <p>And so on...</p>
+          <p>As well as the if/then kind of logic, Javascript also lets you loop through things. You can tell it to do something 10 times, or 100, or 10,000! Or until some condition is met. A real world analogy (keeping with the dinner theme) would be: put dirty dishes into the dishwasher until there are no dirty dishes left on the bench.</p>
+          <h3>So who is this Dom guy you keep talking about?</h3>
+          <p>The DOM is literally the most mind-blowing thing I've come across all week. It's a really powerful tool for looking under the hood of what makes websites tick.</p>
+          <p>The DOM even lets you play around with the website code (just on your own machine of course - it doesn't let you break the internet!) You can also view what a website would look like on other devices (like mobile phones and tablets), and access loads of other information about the website, which makes the DOM an extremely powerful tool for web developers.</p>
+          <h3>Getting a bit technical here, but what's the difference between accessing data from arrays and objects?</h3>
+          <p>An array is essentially a list. You can access an item in the array by referring to its location, which is called its index. The slightly tricky thing about indexes is that they start at zero, not one. For example:</p>
+          <p class="code tab">let dinner = ["pizza", "pasta", "tacos", "curry", "fish & chips"]</p>
+          <p>The code <span class="code">dinner[1]</span> would return "pasta".</p>
+          <p>Objects are a bit more complicated. An object is made up of <span>key-value pairs</span>. For example: </p>
+          <div class="code tab">
+            <p>let mealPlan = {</p>
+            <p class="tab">monday: "pizza",</p>
+            <p class="tab">tuesday: "pasta",</p>
+            <p class="tab">wednesday: "tacos",</p>
+            <p class="tab">thursday: "curry",</p>
+            <p class="tab">friday: "fish & chips"</p>
+            <p>}</p>
+          </div>
+          <p>You can retrieve a value by using its key. For example, <span class="code">mealPlan.wednesday</span> would return "tacos".</p>
+          <h3>And finally, what are functions and why are they useful?</h3>
+          <p>Functions are bits of code that can be reused over and over. They can be set up to take different inputs, which makes them very versatile. Functions save you from having to write the same thing out multiple times and make your code easier to follow. So basically functions are super useful and make your life a lot easier (once you get the hang of how to write them!)</p>
+          
+          <div class="emoji-container">
+            <p class="emoji-large">&#127829;</p>
+          </div>
+          
+          <!-- <br> -->
+
+        </div>  
+      </main>
+    
+      <footer class="footer">
+        <p>&copy Kate Blincoe 2022</p>
+      </footer>
+    </div>
+  </body>
+</html>
