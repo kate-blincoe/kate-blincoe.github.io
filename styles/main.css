@@ -72,6 +72,12 @@ p {
   /* align-items: center; */
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
 .emoji-large {
   font-size: 100px;
 }
