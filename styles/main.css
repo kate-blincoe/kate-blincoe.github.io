@@ -172,14 +172,17 @@ footer {
   bottom: 0;
 }
 
-/* Styles specific to blog homepage */
+/* Styles specific to blog and fun homepage */
 
-#blog-homepage {
+#blog-homepage,
+#fun-homepage {
   background-color: azure;
 }
 
+
 /* flexbox container */
-#blog-container {
+#blog-container,
+#fun-container {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -191,7 +194,7 @@ footer {
 }
 
 /* flexbox items */
-.blog-tile {
+.grid-tile {
   /* border: 4px solid lightseagreen; */
   border: 4px solid slateblue;
   border-radius: 16px;
@@ -207,16 +210,16 @@ footer {
 }
 
 
-.blog-title h3 {
+.grid-title h3 {
   color: mediumvioletred;
 }
 
-.blog-tile a {
+.grid-tile a {
   text-decoration: none;
 }
 
 
-.blog-img {
+.grid-img {
   font-size: 120px;
   margin: 20px 0 10px 0;
 }
